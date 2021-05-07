@@ -122,7 +122,7 @@ telefon = '//*[@id="n50088775"]'
 driver.find_element_by_xpath(telefon).send_keys(phone)
 driver.find_element_by_xpath(page_submit).click()
 
-#Page 6 - centre choice (øksenhallen)
+#Page 6 - centre choice (Bella Centre)
 
 centre = '/html/body/div/form/div[1]/div/table/tbody/tr[2]/td/div/span[2]/label'
 driver.find_element_by_xpath(centre).click()
