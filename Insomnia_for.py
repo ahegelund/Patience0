@@ -13,7 +13,7 @@ bellacentre = '/html/body/div/form/div[1]/div/table/tbody/tr[2]/td/div/span[2]/l
 patients = [
 
 ['Jokab Jacob', '11', 'Amager 44, 2TV', '2311', '35263845',øksenhallen],
-['Johkim Samson', '12', 'Vanløsevej 44, ST TH', '1921', '37282930',bellacentre]
+[	]
 
 ]
 
