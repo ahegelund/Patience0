@@ -18,7 +18,7 @@ TL;DR:
 
 `		- I'm lazy and forgetful, plus; if I remember to do it daily, for two centres, between now (start of May) and when I might be able to get the vaccine through other channels (mid August), I will probably spend >150 hours in total filling in the form. Who has that kind of time?`
 
-`		- I might never get a surplus vaccine but at least I learnt about Selenium, Heroku, DB management and the paint that comes with incorrectly installing Python in a virtual environment on a MacBook`
+`		- I might never get a surplus vaccine but at least I learnt about Selenium, Heroku, DB management and the pain that comes with incorrectly installing Python in a virtual environment on a MacBook`
 
 3. How does Patience0 work?
 
