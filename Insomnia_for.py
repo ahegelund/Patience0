@@ -1,9 +1,18 @@
 #Source: https://stackoverflow.com/questions/38425450/automated-filling-of-web-form-from-a-list-in-python-using-selenium
+# Imports
+
 from selenium import webdriver
 import time
 import random
+from dotenv import load_dotenv
+import os
+
+
 chromedriver_location = "/usr/local/bin/chromedriver"
 driver = webdriver.Chrome(chromedriver_location)
+
+Credentials
+load_dotenv('.env')
 
 #Centre Variables:
 øksenhallen = '/html/body/div/form/div[1]/div/table/tbody/tr[2]/td/div/span[6]/label'
@@ -12,8 +21,8 @@ bellacentre = '/html/body/div/form/div[1]/div/table/tbody/tr[2]/td/div/span[2]/l
 #patient lists
 patients = [
 
-['Jokab Jacob', '11', 'Amager 44, 2TV', '2311', '35263845',øksenhallen],
-[	]
+[client.run(os.getenv('PATIENT1'))],
+[client.run(os.getenv('PATIENT2'))]
 
 ]
 
