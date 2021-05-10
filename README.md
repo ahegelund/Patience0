@@ -2,7 +2,7 @@ TL;DR:
 
 `	- What is Patience0?`
 
-`		- A script that can complete a web form that is used by the Danish state to allow citizens to sign up for surplus vaccine doses at the end of the day for COVID vaccination centres around the capital`
+	`- A script that can complete a web form that is used by the Danish state to allow citizens to sign up for surplus vaccine doses at the end of the day for COVID vaccination centres around the capital`
 
 `		- Patience0 is a play on words, combining:`
 
