@@ -1,5 +1,4 @@
 #Source: https://stackoverflow.com/questions/38425450/automated-filling-of-web-form-from-a-list-in-python-using-selenium
-# Imports
 
 from selenium import webdriver
 import time
