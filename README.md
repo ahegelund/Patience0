@@ -1,8 +1,8 @@
-TL;DR:
+```TL;DR:
 
 	- What is Patience0?
 
-```		- A script that can complete a web form that is used by the Danish state to allow citizens to sign up for surplus vaccine doses at the end of the day for COVID vaccination centres around the capital```
+		- A script that can complete a web form that is used by the Danish state to allow citizens to sign up for surplus vaccine doses at the end of the day for COVID vaccination centres around the capital
 
 		- Patience0 is a play on words, combining:
 			- "Patient 0", a term reserved for the "first documented patient in a disease epidemic within a population"
@@ -34,4 +34,5 @@ Current action points (as of the recent commit on the start of May):
 	- Set up in Heroku & test (using var files to host the private data)
 	- Find out how to track the success of the form fill using the network data (URL params aren't an option)
 	- Look into setting up a secure DB on Heroku for storing the personal data
-	- 
+
+```
