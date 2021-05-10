@@ -18,7 +18,7 @@ driver = webdriver.Chrome(chromedriver_location)
 Credentials
 load_dotenv('.env')
 
-# Vaccine Centre Variables with the XPaths for the selection items from the list of available centres:
+# Vaccine Centre Variables with the XPaths for the selection items from the list of available centres
 
 øksenhallen = '/html/body/div/form/div[1]/div/table/tbody/tr[2]/td/div/span[6]/label'
 bellacentre = '/html/body/div/form/div[1]/div/table/tbody/tr[2]/td/div/span[2]/label'
@@ -35,8 +35,10 @@ patients = [
 # For loop that contains the Selenium instructions, it will loop through each of the "Patient" arrays until there are none
 
 	# Note that each step has a Sleep command that waits for a random duration of 2-4 seconds
-	# I added this for "fun" as a (totally unessesary but "fun") obfuscation method in case there was anyone at Ramboll or Region H who wanted to find users who were using bots to fill in forms. The idea being that a normal user wouldn't complete a form in under 20 seconds.
-	# There's also a delte cookies command for the same reason *shrugs with a "why not?" expression*
+	# I added this as a (totally unessesary but "fun") obfuscation method 
+	# Obfuscation in case there was anyone at Ramboll or Region H who wanted to find users who were using bots to fill in forms. 
+	# The idea being that a normal user wouldn't complete a form in under 20 seconds.
+	# There's also a delte cookies command for the same reason *shrugs with a "why not?" but slightly paranoid expression*
 
 for patient in patients:
 
@@ -48,12 +50,13 @@ for patient in patients:
 
 	page_submit = '/html/body/div/form/div[2]/div[3]/input'
 
-	#Page 1 - intro
+	#Page 1 - intro page
 
 	time.sleep(random.randint(2,4))
 	driver.find_element_by_xpath(page_submit).click()
 
-	#Page 2 - name
+	#Page 2 - name page
+
 	fulde_navn = '//*[@id="t50100775"]'
 	time.sleep(random.randint(2,4))	
 	driver.find_element_by_xpath(fulde_navn).send_keys(patient[0])
@@ -61,41 +64,47 @@ for patient in patients:
 	time.sleep(random.randint(2,4))
 	driver.find_element_by_xpath(page_submit).click()
 
-	#Page 3 - age
+	#Page 3 - age page
+
 	alder = '//*[@id="n35965768"]'
 	time.sleep(random.randint(2,4))	
 	driver.find_element_by_xpath(alder).send_keys(patient[1])
 	time.sleep(random.randint(2,4))
 	driver.find_element_by_xpath(page_submit).click()
 	
-	#Page 4 - address
+	#Page 4 - address page
+
 	addresse = '//*[@id="t50088645"]'
 	time.sleep(random.randint(2,4))	
 	driver.find_element_by_xpath(addresse).send_keys(patient[2])
 	time.sleep(random.randint(2,4))
 	driver.find_element_by_xpath(page_submit).click()
 	
-	#Page 5 - postcode
+	#Page 5 - postcode page
+
 	postkode = '//*[@id="t50088674"]'
 	time.sleep(random.randint(2,4))
 	driver.find_element_by_xpath(postkode).send_keys(patient[3])
 	time.sleep(random.randint(2,4))	
 	driver.find_element_by_xpath(page_submit).click()
 	
-	#Page 6 - phone
+	#Page 6 - phone page
+
 	telefon = '//*[@id="n50088775"]'
 	time.sleep(random.randint(2,4))
 	driver.find_element_by_xpath(telefon).send_keys(patient[4])
 	time.sleep(random.randint(2,4))
 	driver.find_element_by_xpath(page_submit).click()
 
-	#Page 7 - centre choice
+	#Page 7 - centre choice page
+
 	time.sleep(random.randint(2,4))
 	driver.find_element_by_xpath(patient[5]).click()
 	time.sleep(random.randint(2,4))
 	driver.find_element_by_xpath(page_submit).click()
 
-	#Page 8 & 9 - final submit
+	#Page 8 & 9 - final submit page
+	
 	time.sleep(random.randint(2,4))
 	driver.find_element_by_xpath(page_submit).click()
 	time.sleep(random.randint(2,4))
