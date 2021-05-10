@@ -34,7 +34,7 @@ TL;DR:
 
 5. Current action points (as of the recent commit on the start of May):
 
-`	- Fix the clusterfuck of a Python installation on my local Mac Book (I can't gey the local env package to work and it's driving me nuts)`
+`	- Fix the clusterfuck of a Python installation on my local Mac Book (I can't get the local env package to work due to virtual env package location the and it's driving me nuts)`
 
 `	- Personal data variables set as environmental variables stored in a local file that isn't pushed to Github`
 
